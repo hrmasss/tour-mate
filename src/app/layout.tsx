@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
 import type { Metadata } from "next";
 import { ColorSchemeScript, MantineProvider, createTheme } from "@mantine/core";
 import { themeOverride } from "@/lib/theme-override";

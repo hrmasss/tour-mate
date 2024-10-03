@@ -72,9 +72,7 @@ export default function Header({ className }: { className?: string }) {
     ));
 
     return (
-        <Box
-            mb={120}
-            className={styles.header}>
+        <Box className={styles.header}>
             <header className={cn("py-3", className)}>
                 <Group
                     justify="space-between"
