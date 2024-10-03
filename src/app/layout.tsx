@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { ColorSchemeScript, MantineProvider, createTheme } from "@mantine/core";
 import { themeOverride } from "@/lib/theme-override";
 import { Sora } from "next/font/google";
+import { Header } from "@/components/Header";
 
 const theme = createTheme(themeOverride);
 
@@ -32,7 +33,8 @@ export default function RootLayout({
             <body className={`antialiased font-sans ${sora.variable}`}>
                 <MantineProvider
                     theme={theme}
-                    defaultColorScheme="auto">
+                    defaultColorScheme="light">
+                    <Header className="px-4 sm:px-8 max-w-7xl mx-auto" />
                     {children}
                 </MantineProvider>
             </body>

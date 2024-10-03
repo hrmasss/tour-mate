@@ -2,11 +2,11 @@ import { type MantineThemeOverride, DEFAULT_THEME } from "@mantine/core";
 import { sora } from "@/app/layout";
 
 export const themeOverride: MantineThemeOverride = {
-    primaryShade: { light: 5, dark: 6 },
-    primaryColor: "orange",
+    primaryShade: { light: 6, dark: 7 },
+    primaryColor: "lime",
     autoContrast: true,
     defaultGradient: {
-        from: "orange",
+        from: "lime",
         to: "yellow",
         deg: 45,
     },
