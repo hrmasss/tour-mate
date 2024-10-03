@@ -33,7 +33,7 @@ import {
 import { IconChevronDown } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 
-export function Header({ className }: { className?: string }) {
+export default function Header({ className }: { className?: string }) {
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
         useDisclosure(false);
     const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);

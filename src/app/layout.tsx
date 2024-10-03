@@ -4,7 +4,8 @@ import type { Metadata } from "next";
 import { ColorSchemeScript, MantineProvider, createTheme } from "@mantine/core";
 import { themeOverride } from "@/lib/theme-override";
 import { Sora } from "next/font/google";
-import { Header } from "@/components/Header";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const theme = createTheme(themeOverride);
 
@@ -36,6 +37,7 @@ export default function RootLayout({
                     defaultColorScheme="light">
                     <Header className="px-4 sm:px-8 max-w-7xl mx-auto" />
                     {children}
+                    <Footer className="px-4 sm:px-8 max-w-7xl mx-auto" />
                 </MantineProvider>
             </body>
         </html>
