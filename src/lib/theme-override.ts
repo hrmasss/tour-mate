@@ -6,8 +6,8 @@ export const themeOverride: MantineThemeOverride = {
     primaryColor: "lime",
     autoContrast: true,
     defaultGradient: {
-        from: "lime",
-        to: "yellow",
+        from: "green",
+        to: "lime",
         deg: 45,
     },
     fontFamily: `${sora.style.fontFamily}, ${DEFAULT_THEME.fontFamily}`,

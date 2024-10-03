@@ -1,3 +1,4 @@
+import FeatureSection from "@/components/FeaturesSection";
 import FilterSearch from "@/components/FilterSearch";
 import OverlayCarousel from "@/components/OverlayCarousel";
 import { heroCarouselImages } from "@/lib/content-data";
@@ -14,9 +15,13 @@ export default function HomePage() {
                         Let us help you to make your own adventures.
                     </p>
 
-                    <FilterSearch className="mt-8"/>
+                    <FilterSearch className="mt-8" />
                 </div>
             </OverlayCarousel>
+
+            <div className="px-4 sm:px-8 max-w-7xl mx-auto">
+                <FeatureSection />
+            </div>
         </main>
     );
 }
