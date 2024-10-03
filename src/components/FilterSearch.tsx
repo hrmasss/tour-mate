@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Box, Button, Select } from "@mantine/core";
+import { Box, Button, Select, Text } from "@mantine/core";
 import { IconSearch, IconCalendar, IconLocation } from "@tabler/icons-react";
 import { DatePickerInput } from "@mantine/dates";
 
@@ -18,7 +18,9 @@ export default function FilterSearch({ className }: { className?: string }) {
                                         input: "z-50 text-nowrap w-full",
                                         label: "translate-x-2.5",
                                     }}
-                                    leftSection={<IconLocation className="size-4" />}
+                                    leftSection={
+                                        <IconLocation className="size-4" />
+                                    }
                                     label="Destination"
                                     placeholder="Select your destination"
                                     variant="unstyled"
@@ -73,10 +75,10 @@ export default function FilterSearch({ className }: { className?: string }) {
                         <div>
                             <Button
                                 component="a"
-                                className="h-full py-3 w-full justify-center items-center gap-x-2 text-sm font-medium border border-transparent focus:outline-none disabled:opacity-50 disabled:pointer-events-none rounded-full"
+                                className="h-full py-3 px-6 w-full justify-center items-center gap-x-2 text-sm font-medium border border-transparent focus:outline-none disabled:opacity-50 disabled:pointer-events-none rounded-full"
                                 href="#">
-                                <IconSearch className="size-5 shrink-0 stroke-2 mr-3" />
-                                Search
+                                <IconSearch stroke={3} className="size-5 shrink-0 mr-3" />
+                                <Text fw="bold">Search</Text>
                             </Button>
                         </div>
                     </div>
