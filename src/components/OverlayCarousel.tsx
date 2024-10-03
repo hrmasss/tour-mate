@@ -22,7 +22,7 @@ export default function OverlayCarousel({
     const autoplay = useRef(Autoplay({ delay: 5000 }));
 
     return (
-        <div className="relative flex min-h-[500px] md:min-h-[450px]">
+        <div className="relative flex min-h-[600px] md:min-h-[500px]">
             <Carousel
                 height="100%"
                 style={{ flex: 1 }}

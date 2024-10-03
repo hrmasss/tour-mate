@@ -1,3 +1,4 @@
+import FilterSearch from "@/components/FilterSearch";
 import OverlayCarousel from "@/components/OverlayCarousel";
 import { heroCarouselImages } from "@/lib/content-data";
 
@@ -12,6 +13,8 @@ export default function HomePage() {
                     <p className="text-xl md:text-2xl text-center">
                         Let us help you to make your own adventures.
                     </p>
+
+                    <FilterSearch className="mt-8"/>
                 </div>
             </OverlayCarousel>
         </main>

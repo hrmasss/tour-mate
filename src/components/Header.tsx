@@ -88,7 +88,7 @@ export default function Header({ className }: { className?: string }) {
                     <Group
                         h="100%"
                         gap={0}
-                        visibleFrom="sm">
+                        visibleFrom="md">
                         {/* Home Link */}
                         <Link
                             href={homeLink.url}
@@ -158,7 +158,7 @@ export default function Header({ className }: { className?: string }) {
                         ))}
                     </Group>
 
-                    <Group visibleFrom="sm">
+                    <Group visibleFrom="md">
                         <Button
                             component="a"
                             href={`tel:${phoneNumber}`}>
@@ -171,7 +171,7 @@ export default function Header({ className }: { className?: string }) {
                         opened={drawerOpened}
                         onClick={toggleDrawer}
                         size="sm"
-                        hiddenFrom="sm"
+                        hiddenFrom="md"
                     />
                 </Group>
             </header>
@@ -182,7 +182,7 @@ export default function Header({ className }: { className?: string }) {
                 size="100%"
                 padding="md"
                 title="Menu"
-                hiddenFrom="sm"
+                hiddenFrom="md"
                 zIndex={1000000}>
                 <ScrollArea
                     h="calc(100vh - 90px)"
