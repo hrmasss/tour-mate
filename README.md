@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TourMate
 
-## Getting Started
+TourMate is a modern travel booking web application built with Next.js, offering users the ability to explore and book various tour packages. The app is designed with a sleek interface, optimized performance, and seamless user experience, leveraging technologies like TailwindCSS, Mantine UI, and TypeScript.
 
-First, run the development server:
+## Features
+
+-   **Explore Tour Packages**: Browse through a variety of tour packages, each with details like pricing, duration, and customer ratings.
+-   **Responsive Design**: Optimized for both mobile and desktop experiences.
+-   **Dynamic Routing**: Each tour has its own detailed page for more in-depth information.
+-   **User-friendly Interface**: Built using Mantine UI for a polished, intuitive design.
+
+---
+
+## Project Setup
+
+### Prerequisites
+
+-   **Node.js** (version 18 or later)
+-   **npm** or other compatible package manager for package management
+
+### Installation
+
+#### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/hrmasss/tour-mate.git
+cd tour-mate
+```
+
+#### Step 2: Install Dependencies
+
+```bash
+npm install
+```
+
+#### Step 3: Start the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` in your browser to see the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Directory Structure
 
-## Learn More
+```
+tour-mate/
+│
+├── public/                         # Public assets like favicon
+│   └── favicon.svg
+├── src/
+│   ├── app/                        # Next.js app routes
+│   │   ├── layout.tsx              # Global layout for all pages
+│   │   ├── page.tsx                # Main landing page
+│   │   └── ...                     # Other routes
+│   ├── components/                 # Reusable UI components
+│   ├── lib/                        # Utility functions and static data
+│   ├── styles/                     # Global and module-based CSS
+│       ├── globals.css             # Global CSS
+│       └── modules/
+├── .gitignore                       # Git ignore rules
+├── next.config.mjs                  # Next.js configuration
+├── package.json                     # Node.js dependencies and scripts
+├── postcss.config.mjs               # PostCSS configuration
+├── tailwind.config.ts               # TailwindCSS configuration
+├── tsconfig.json                    # TypeScript configuration
+└── README.md                        # Project documentation
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Routes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   **`/`**: Home page that introduces the platform.
+-   **`/tours`**: Displays a list of all available tours.
+-   **`/tours/[slug]`**: Dynamic route that shows detailed information for a specific tour.
+-   **`/about`**: Information about the platform.
+-   **`/contact`**: Contact page for inquiries and support.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Available Scripts
 
-## Deploy on Vercel
+-   **`npm run dev`**: Runs the app in development mode.
+-   **`npm run build`**: Builds the app for production.
+-   **`npm run start`**: Starts the production server.
+-   **`npm run lint`**: Lints the code using ESLint.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.

@@ -3,15 +3,7 @@
 import styles from "@/styles/modules/tour-card.module.css";
 import { IconHeart, IconCurrencyTaka, IconClock } from "@tabler/icons-react";
 import Image from "next/image";
-import {
-    Card,
-    Text,
-    Group,
-    Button,
-    ActionIcon,
-    Rating,
-    Flex,
-} from "@mantine/core";
+import { Card, Text, Group, Button, ActionIcon, Rating } from "@mantine/core";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
@@ -36,7 +28,7 @@ export default function TourCard({ tour, className }: TourCardProps) {
             withBorder
             radius="md"
             p="md"
-            className={cn(styles.card, "group")}>
+            className={cn(styles.card, className, "group")}>
             {/* Image Section */}
             <Card.Section className="h-[150px] relative overflow-hidden">
                 <Image

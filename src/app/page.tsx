@@ -30,7 +30,10 @@ export default function HomePage() {
 
                     <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 py-6">
                         {tours.map((tour) => (
-                            <TourCard tour={tour} />
+                            <TourCard
+                                key={tour.slug}
+                                tour={tour}
+                            />
                         ))}
                     </div>
                 </div>
